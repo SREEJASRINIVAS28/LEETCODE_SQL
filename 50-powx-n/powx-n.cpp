@@ -11,9 +11,9 @@ public:
     }
 
     double myPow(double x, int n) {
-        long long N = n;  // To handle INT_MIN safely
+        long long N = n;  
         if (N < 0) {
-            N = -N;
+        
             return 1.0 / pospower(x, N);
         } else {
             return pospower(x, N);
